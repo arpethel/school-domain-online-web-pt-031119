@@ -20,7 +20,7 @@ class School
     # binding.pry
     # @roster[grade].sort
     @roster.each do |k, v|
-      @roster[k] = v.sort{ |a,b| a[1]<=>b[1] }
+      @roster[k] = v.sort{ |a,b| a<=>b }
     end
   end
 
