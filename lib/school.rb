@@ -17,7 +17,7 @@ class School
   end
 # binding.pry
   def sort(grade)
-    # binding.pry
+    binding.pry
     @roster[grade].sort
   end
 
