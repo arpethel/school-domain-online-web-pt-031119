@@ -15,10 +15,8 @@ class School
     @roster[grade] ||= []
     @roster[grade] << student
   end
-# binding.pry
-  def sort #(grade, student)
-    # binding.pry
-    # @roster[grade].sort
+
+  def sort
     @roster.each do |k, v|
       @roster[k] = v.sort{ |a,b| a<=>b }
     end
